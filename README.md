@@ -1,25 +1,27 @@
-# Region Tab Recorder (Chrome Extension)
+# On Record — Chrome Extension
 
-This extension lets you click the action button, drag to select a region of the current tab, and record that region.
+Record the quiet rectangle. Pin it down before it dissolves.
+
+On Record lets you select a region of the current tab and capture it as a video or a GIF — a soft machine for small moments.
 
 ## How it works
-- Click the extension action to start region selection.
-- Drag to select the region to record.
-- Click **Stop** when done.
-- Choose export format from the modal.
+- Click the extension icon to begin the selection.
+- Drag out the region you want to keep.
+- Click **Stop** when you’re done.
+- Choose an export format in the modal.
 
 ## Export formats
-- **Video**: exports the browser’s native `MediaRecorder` output (MP4 if supported, otherwise WebM).
+- **Video**: browser-native `MediaRecorder` output (MP4 if supported, otherwise WebM).
 - **GIF**: rendered via `gif.js` in the offscreen document.
 
-GIF export is CPU‑heavy and can take a while for longer or high‑FPS clips.
+GIF export is CPU‑heavy and may take a while for longer or high‑FPS clips.
 
 ## Install (developer mode)
 1. Open `chrome://extensions/`.
 2. Enable Developer mode.
 3. Click **Load unpacked** and select this folder.
 
-## Files
+## Project layout
 - `manifest.json`: MV3 manifest.
 - `background.js`: service worker for orchestration.
 - `content.js`: selection overlay + modal UI.
