@@ -6,7 +6,7 @@ On Record lets you select a region of the current tab and capture it as a video 
 
 Project website: [on-record.vercel.app](https://on-record.vercel.app/)
 
-![On Record demo](https://on-record.vercel.app/on-record.gif?ts=20260208)
+![On Record demo](https://on-record.vercel.app/example.mp4)
 
 ## How it works
 - Click the extension icon to begin the selection.
